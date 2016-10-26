@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="B1ldEK" name="PolyPlug" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.PolyPlug" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="1" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="PolyPlug" pluginDesc="PolyPlug" pluginManufacturer="Hanze "
+              pluginManufacturerCode="Manu" pluginCode="B1ld" pluginChannelConfigs=""
+              pluginIsSynth="0" pluginWantsMidiIn="1" pluginProducesMidiOut="1"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="1" pluginAUExportPrefix="PolyPlugAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.PolyPlug"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.2.4">
+  <MAINGROUP id="RHyhWU" name="PolyPlug">
+    <GROUP id="{4BC86B16-769A-F60A-F178-269A4F08A00D}" name="Source">
+      <GROUP id="{CB53A4A6-876D-3680-4F48-70CB5F303A18}" name="stk">
+        <FILE id="K332oK" name="ADSR.cpp" compile="1" resource="0" file="Source/stk/ADSR.cpp"/>
+        <FILE id="UZDheU" name="ADSR.h" compile="0" resource="0" file="Source/stk/ADSR.h"/>
+        <FILE id="g7ywqu" name="BiQuad.cpp" compile="1" resource="0" file="Source/stk/BiQuad.cpp"/>
+        <FILE id="k8w8yR" name="BiQuad.h" compile="0" resource="0" file="Source/stk/BiQuad.h"/>
+        <FILE id="g1nGOK" name="BlitSaw.cpp" compile="1" resource="0" file="Source/stk/BlitSaw.cpp"/>
+        <FILE id="m202vf" name="BlitSaw.h" compile="0" resource="0" file="Source/stk/BlitSaw.h"/>
+        <FILE id="uYjy8R" name="BlitSquare.cpp" compile="1" resource="0" file="Source/stk/BlitSquare.cpp"/>
+        <FILE id="gvhbLs" name="BlitSquare.h" compile="0" resource="0" file="Source/stk/BlitSquare.h"/>
+        <FILE id="a9GSLI" name="FileLoop.cpp" compile="1" resource="0" file="Source/stk/FileLoop.cpp"/>
+        <FILE id="rjVUe2" name="FileLoop.h" compile="0" resource="0" file="Source/stk/FileLoop.h"/>
+        <FILE id="b6rIqI" name="FileRead.cpp" compile="1" resource="0" file="Source/stk/FileRead.cpp"/>
+        <FILE id="lACY4X" name="FileRead.h" compile="0" resource="0" file="Source/stk/FileRead.h"/>
+        <FILE id="NX1vkZ" name="FileWrite.cpp" compile="1" resource="0" file="Source/stk/FileWrite.cpp"/>
+        <FILE id="lLe9jy" name="FileWrite.h" compile="0" resource="0" file="Source/stk/FileWrite.h"/>
+        <FILE id="jGVzFk" name="FileWvIn.cpp" compile="1" resource="0" file="Source/stk/FileWvIn.cpp"/>
+        <FILE id="SzfCks" name="FileWvIn.h" compile="0" resource="0" file="Source/stk/FileWvIn.h"/>
+        <FILE id="X9TydV" name="Filter.h" compile="0" resource="0" file="Source/stk/Filter.h"/>
+        <FILE id="NhX9qC" name="FM.cpp" compile="1" resource="0" file="Source/stk/FM.cpp"/>
+        <FILE id="f9XsFP" name="FM.h" compile="0" resource="0" file="Source/stk/FM.h"/>
+        <FILE id="Mdgpow" name="Generator.h" compile="0" resource="0" file="Source/stk/Generator.h"/>
+        <FILE id="qr4y47" name="Instrmnt.h" compile="0" resource="0" file="Source/stk/Instrmnt.h"/>
+        <FILE id="Tqg271" name="SineWave.cpp" compile="1" resource="0" file="Source/stk/SineWave.cpp"/>
+        <FILE id="WqnH7x" name="SineWave.h" compile="0" resource="0" file="Source/stk/SineWave.h"/>
+        <FILE id="ftuXyz" name="SKINI.msg" compile="0" resource="1" file="Source/stk/SKINI.msg"/>
+        <FILE id="Of3348" name="Stk.cpp" compile="1" resource="0" file="Source/stk/Stk.cpp"/>
+        <FILE id="KTpQFj" name="Stk.h" compile="0" resource="0" file="Source/stk/Stk.h"/>
+        <FILE id="fvG51Q" name="TwoZero.cpp" compile="1" resource="0" file="Source/stk/TwoZero.cpp"/>
+        <FILE id="BRMvjL" name="TwoZero.h" compile="0" resource="0" file="Source/stk/TwoZero.h"/>
+        <FILE id="Fc1dKg" name="WvIn.h" compile="0" resource="0" file="Source/stk/WvIn.h"/>
+      </GROUP>
+      <FILE id="Njv2FI" name="Synth.h" compile="0" resource="0" file="Source/Synth.h"/>
+      <FILE id="tHUAQU" name="Smooth.h" compile="1" resource="0" file="Source/Smooth.h"
+            xcodeResource="1"/>
+      <FILE id="S94Ejv" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="PYG174" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="MVMfsh" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="cD3rCh" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="PolyPlug"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="PolyPlug"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
